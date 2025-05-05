@@ -1,0 +1,53 @@
+@import 'parts/variable'; // Import biến vào đây
+@import 'parts/reset'; // Import reset vào đây
+@import 'parts/base'; // Import base vào đây
+@import 'parts/functions'; // Import functions vào đây
+@import 'parts/mixin'; // Import mixin vào đây
+@import 'parts/placeholders'; // Import placeholders vào đây
+@import 'components/header'; // Import header vào đây
+
+
+.section-box{
+    padding: 30px 0;
+}
+
+.about-box{
+    @extend .section-box;
+    box-shadow: 5px 5px 5px 5px #ccc;
+}
+
+.products-box{
+    @extend .section-box;
+    box-shadow: 5px 5px 5px 5px #ccc;
+}
+
+.new-box{
+    @extend %reset-box;
+    box-shadow: 3px 3px 3px 3px #ccc;
+}
+
+.partner-box{
+    @extend %reset-box;
+    display: flex
+}
+
+ul{
+    &.primary-menu{
+        @include reset-lists;
+        background-color: green;
+    }
+
+    @include center(50%, 30px, color, green);
+    // @include center(color,red); 
+}
+
+.products-list{
+    $width: getWidth(5);
+    .products__item{
+        width: $width;
+    }
+}
+
+.content{
+    @include position('me', 10px, 20px);
+}

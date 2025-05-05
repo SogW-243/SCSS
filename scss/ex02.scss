@@ -1,0 +1,42 @@
+//Khai báo và gắn biến trong CSS
+// Cú pháp: $tenBien: gia_tri;
+// Tên biến có 1 số quy tắc sau:
+// - Chứa: số, chữ cái thường, chữ hoa, dấu gạch dưới, dấu gạch ngang
+// - không được bắt đầu bằng số
+
+// Biến toàn cục:
+$primaryColor: blue;
+$secondaryColor: red;
+$a: 10;
+$b: 10px;
+$c: 20px + $b;
+$d: 80%;
+$color: #f00;
+$bdr: 1px solid #ccc;
+$fontFamily: 'Arial', sans-serif;
+$baseSpace: 5px;
+$columnSpace: $baseSpace + 15px;
+
+
+:root{
+    --font-size: 1rem;
+}
+
+h1{
+    //Biến cục bộ
+    $headingBg: green;
+    color: $primaryColor;
+    background: $headingBg;
+    span{
+        color: $secondaryColor;
+    }
+}
+.header{
+    background: $primaryColor;
+    color: $secondaryColor;
+    padding: 0 $columnSpace;
+}
+
+body{
+    font-size: var(--font-size);
+}

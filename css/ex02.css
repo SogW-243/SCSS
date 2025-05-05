@@ -1,0 +1,21 @@
+:root {
+  --font-size: 1rem;
+}
+
+h1 {
+  color: blue;
+  background: green;
+}
+h1 span {
+  color: red;
+}
+
+.header {
+  background: blue;
+  color: red;
+  padding: 0 20px;
+}
+
+body {
+  font-size: var(--font-size);
+}/*# sourceMappingURL=ex02.css.map */

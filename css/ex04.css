@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: #efefef;
+  font-size: 1rem;
+}
+.header .header__inner {
+  padding: 30px 0;
+  border-radius: 1px solid #ccc;
+}
+@media (max-width: 768px) {
+  .header .header__inner {
+    border: none;
+  }
+}
+@media (max-width: 480px) {
+  .header .header__inner {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    background-color: none;
+    box-sizing: 3px 3px 5px 5px #ccc;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 15px 0;
+  }
+}
+
+.col-12 {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+.col-11 {
+  max-width: 91.6666666667%;
+  flex-basis: 91.6666666667%;
+}
+
+.col-10 {
+  max-width: 83.3333333333%;
+  flex-basis: 83.3333333333%;
+}
+
+.col-9 {
+  max-width: 75%;
+  flex-basis: 75%;
+}
+
+.col-8 {
+  max-width: 66.6666666667%;
+  flex-basis: 66.6666666667%;
+}
+
+.col-7 {
+  max-width: 58.3333333333%;
+  flex-basis: 58.3333333333%;
+}
+
+.col-6 {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.col-5 {
+  max-width: 41.6666666667%;
+  flex-basis: 41.6666666667%;
+}
+
+.col-4 {
+  max-width: 33.3333333333%;
+  flex-basis: 33.3333333333%;
+}
+
+.col-3 {
+  max-width: 25%;
+  flex-basis: 25%;
+}
+
+.col-2 {
+  max-width: 16.6666666667%;
+  flex-basis: 16.6666666667%;
+}
+
+.col-1 {
+  max-width: 8.3333333333%;
+  flex-basis: 8.3333333333%;
+}
+
+.item-40px {
+  font-size: 40px;
+  width: 80px;
+  height: 40px;
+}
+
+.item-50px {
+  font-size: 50px;
+  width: 100px;
+  height: 50px;
+}
+
+.item-80px {
+  font-size: 80px;
+  width: 160px;
+  height: 80px;
+}
+
+.product-small {
+  font-size: 80px;
+  font-weight: normal;
+}
+
+.product-regular {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.product-medium {
+  font-size: 140px;
+  font-weight: 900px;
+}/*# sourceMappingURL=ex04.css.map */

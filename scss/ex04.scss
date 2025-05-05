@@ -1,0 +1,57 @@
+// Import system
+
+@import 'parts/reset';
+@import 'parts/variable';
+@import 'parts/functions';
+@import 'parts/mixin';
+@import 'parts/placeholders';
+@import 'parts/base';
+
+//Import components
+@import 'components/header';
+$length: 12;
+// // 
+// @for $index from 1 through $length {
+//     $columnWidth: 100% / (12 / $index);
+//     .col-#{$index} {
+//         max-width: $columnWidth;
+//         flex-basis: $columnWidth;
+//     }
+// }
+
+ $index: 12;
+ @while $index>=1 {
+    $columnWidth: 100% / (12 / $index);
+    .col-#{$index} {
+        max-width: $columnWidth;
+        flex-basis: $columnWidth;
+    }
+
+    $index: $index - 1;
+ }
+
+ $size: 40px, 50px, 80px;
+//$bienchay in $danhsach
+ @each $size in $size {
+
+    // Nếu muốn thay đổi $size thành tên khác => Dùng @if @else
+
+    .item-#{$size} {
+        font-size: $size;
+        width: $size * 2;
+        height: $size;
+    }
+ }
+
+ //each nhiều giá trị
+ $valueLists: 
+    (small, 40px, normal),
+    (regular, 50px, bold),
+    (medium, 70px, 900px);
+
+ @each $name, $size, $style in $valueLists{
+    .product-#{$name} {
+        font-size: $size * 2;
+        font-weight: $style;
+    }
+ }

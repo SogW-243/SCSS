@@ -1,0 +1,77 @@
+// Biến SCSS
+// :root{
+//     --primary-color: blue;
+// }
+
+
+// biến SCSS
+$primary-color: green;
+
+.header{
+    .header__inner{
+        background: #fff;
+        padding: 30px 0;
+
+        .logo{
+            width: 100%;
+            margin-right: 10px;
+
+            img{
+                max-width: 200px;
+                height: auto;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.title{
+    // color: var(--primary-color);
+
+    color: $primary-color;
+    &:hover{
+        color: red;
+    }
+    &::before{
+        content: "Hello";
+        color: blue;
+    }
+    &::after{
+        content: "World";
+        color: green;
+    }
+    &.large{
+        font-size: 1.5em;
+    }
+    > span{
+        font-style: italic;
+    }
+    &:first-child{
+        color: green;
+    }
+}
+
+ul{
+    &.list-posts{
+        li{
+            a{
+                &:hover{
+                    &::before{
+                        content: "Hello";
+                    }
+                }
+            }
+        }
+    }
+    &.list-products{
+        li{
+            a{
+                &:hover{
+                    &::before{
+                        content: "World";
+                    }
+                }
+            }
+        }
+    }
+}

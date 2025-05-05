@@ -1,0 +1,37 @@
+Câu lệnh @if trong CSS
+//Trường hợp 1
+@if (condition){
+    //Noi dung
+}
+//Trường hợp 2
+@if (condition){
+    //Noi dung dung
+} @else{
+    //Noi dung sai
+}
+//Trường hợp 3
+@if (condition){
+    //Noi dung
+} @else if (condition){
+    //Noi dung
+} @else if (condition){
+    //Noi dung
+} @else if (condition){
+    //Noi dung
+} @else{
+    //Trường hop con lai
+}
+
+// Trường hợp 4
+
+@if (condition){
+    @if (condition){
+
+    }
+    @else{
+
+    }
+@else{
+
+   } 
+}

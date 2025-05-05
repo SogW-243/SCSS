@@ -1,0 +1,44 @@
+.header .header__inner {
+  background: #fff;
+  padding: 30px 0;
+}
+.header .header__inner .logo {
+  width: 100%;
+  margin-right: 10px;
+}
+.header .header__inner .logo img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.title {
+  color: green;
+}
+.title:hover {
+  color: red;
+}
+.title::before {
+  content: "Hello";
+  color: blue;
+}
+.title::after {
+  content: "World";
+  color: green;
+}
+.title.large {
+  font-size: 1.5em;
+}
+.title > span {
+  font-style: italic;
+}
+.title:first-child {
+  color: green;
+}
+
+ul.list-posts li a:hover::before {
+  content: "Hello";
+}
+ul.list-products li a:hover::before {
+  content: "World";
+}/*# sourceMappingURL=ex01.css.map */
