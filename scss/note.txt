@@ -35,3 +35,14 @@ Câu lệnh @if trong CSS
 
    } 
 }
+
+
+Minify CSS bằng Scss
+
+sass --watch duong_dan_scss:duong_dan_css --style compressed
+
+Ví dụ:
+
+sass --watch scss/style.scss:css/style.min.css --style compressed
+
+sass --watch scss:css --style compressed => Không nên dùng
